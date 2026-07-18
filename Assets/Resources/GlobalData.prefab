@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7579561518162841638}
-  - component: {fileID: 6176933039374305272}
+  - component: {fileID: 7964730808363510865}
   m_Layer: 0
   m_Name: GlobalData
   m_TagString: Untagged
@@ -32,7 +32,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6176933039374305272
+--- !u!114 &7964730808363510865
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -41,608 +41,405 @@ MonoBehaviour:
   m_GameObject: {fileID: 5620338540645584181}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ead2e421aa802d04fb8c1413349addb0, type: 3}
+  m_Script: {fileID: 11500000, guid: d35bd707cf8757f4bb7dff74a940ffeb, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GlobalDataContainer
-  Data:
-    PlayerResourcesInt: []
-    PlayerResourcesFloat: []
-    SpikersDatas:
-    - ID: Mirror
-      Name: "\u0417\u0435\u0440\u043A\u0430\u043B\u043E"
-      Icon: {fileID: 0}
-      voiceType:
-        ID: 
-        clip: {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
-        additionClips:
-        - {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
-        - {fileID: 8300000, guid: c6fc1570437806244a5fb4dc1891cb86, type: 3}
-        - {fileID: 8300000, guid: 15bd1e34be2b7b744af0f5ab91730e77, type: 3}
-        - {fileID: 8300000, guid: 03e10797ab6dc26469cebc410958ddb2, type: 3}
-        - {fileID: 8300000, guid: 5c0c52e2da9a0d14ebb9fdc0fbe68ded, type: 3}
-        volume: 1
-        pitch: 0.9
-        loop: 0
-        spatialBlend: 1
-        rolloffMode: 0
-        dopplerLevel: 1
-        randomPitchOffset: {x: -0.2, y: 0}
-        randomVolumeOffset: {x: 0, y: 0}
-        useReverb: 0
-        preset: 0
-        MixerGroop: {fileID: -1071407340316977573, guid: ffe9d80e515549047a315f339d06c500, type: 2}
-    - ID: Cabinet
-      Name: "\u0428\u043A\u0430\u0444"
-      Icon: {fileID: 0}
-      voiceType:
-        ID: 
-        clip: {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
-        additionClips:
-        - {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
-        - {fileID: 8300000, guid: c6fc1570437806244a5fb4dc1891cb86, type: 3}
-        - {fileID: 8300000, guid: 15bd1e34be2b7b744af0f5ab91730e77, type: 3}
-        - {fileID: 8300000, guid: 03e10797ab6dc26469cebc410958ddb2, type: 3}
-        - {fileID: 8300000, guid: 5c0c52e2da9a0d14ebb9fdc0fbe68ded, type: 3}
-        volume: 1
-        pitch: 1.4
-        loop: 0
-        spatialBlend: 1
-        rolloffMode: 0
-        dopplerLevel: 1
-        randomPitchOffset: {x: -0.2, y: 0.1}
-        randomVolumeOffset: {x: 0, y: 0}
-        useReverb: 0
-        preset: 0
-        MixerGroop: {fileID: -1071407340316977573, guid: ffe9d80e515549047a315f339d06c500, type: 2}
-    - ID: TrashBin
-      Name: "\u041C\u0443\u0441\u043E\u0440\u043D\u044B\u0439 \u0431\u0430\u043A"
-      Icon: {fileID: 0}
-      voiceType:
-        ID: 
-        clip: {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
-        additionClips:
-        - {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
-        - {fileID: 8300000, guid: c6fc1570437806244a5fb4dc1891cb86, type: 3}
-        - {fileID: 8300000, guid: 15bd1e34be2b7b744af0f5ab91730e77, type: 3}
-        - {fileID: 8300000, guid: 03e10797ab6dc26469cebc410958ddb2, type: 3}
-        - {fileID: 8300000, guid: 5c0c52e2da9a0d14ebb9fdc0fbe68ded, type: 3}
-        volume: 1
-        pitch: 2
-        loop: 0
-        spatialBlend: 1
-        rolloffMode: 0
-        dopplerLevel: 1
-        randomPitchOffset: {x: -0.2, y: 0.1}
-        randomVolumeOffset: {x: 0, y: 0}
-        useReverb: 0
-        preset: 0
-        MixerGroop: {fileID: -1071407340316977573, guid: ffe9d80e515549047a315f339d06c500, type: 2}
-    - ID: Door
-      Name: "\u0414\u0432\u0435\u0440\u044C"
-      Icon: {fileID: 0}
-      voiceType:
-        ID: 
-        clip: {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
-        additionClips:
-        - {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
-        - {fileID: 8300000, guid: c6fc1570437806244a5fb4dc1891cb86, type: 3}
-        - {fileID: 8300000, guid: 15bd1e34be2b7b744af0f5ab91730e77, type: 3}
-        - {fileID: 8300000, guid: 03e10797ab6dc26469cebc410958ddb2, type: 3}
-        - {fileID: 8300000, guid: 5c0c52e2da9a0d14ebb9fdc0fbe68ded, type: 3}
-        volume: 1
-        pitch: 0.5
-        loop: 0
-        spatialBlend: 1
-        rolloffMode: 0
-        dopplerLevel: 1
-        randomPitchOffset: {x: -0.2, y: 0.1}
-        randomVolumeOffset: {x: 0, y: 0}
-        useReverb: 0
-        preset: 0
-        MixerGroop: {fileID: -1071407340316977573, guid: ffe9d80e515549047a315f339d06c500, type: 2}
-    - ID: Stove
-      Name: "\u041F\u043B\u0438\u0442\u0430"
-      Icon: {fileID: 0}
-      voiceType:
-        ID: 
-        clip: {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
-        additionClips:
-        - {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
-        - {fileID: 8300000, guid: c6fc1570437806244a5fb4dc1891cb86, type: 3}
-        - {fileID: 8300000, guid: 15bd1e34be2b7b744af0f5ab91730e77, type: 3}
-        - {fileID: 8300000, guid: 03e10797ab6dc26469cebc410958ddb2, type: 3}
-        - {fileID: 8300000, guid: 5c0c52e2da9a0d14ebb9fdc0fbe68ded, type: 3}
-        volume: 0.5
-        pitch: 2.2
-        loop: 0
-        spatialBlend: 1
-        rolloffMode: 0
-        dopplerLevel: 1
-        randomPitchOffset: {x: -0.5, y: 0.5}
-        randomVolumeOffset: {x: 0, y: 0}
-        useReverb: 1
-        preset: 3
-        MixerGroop: {fileID: -1071407340316977573, guid: ffe9d80e515549047a315f339d06c500, type: 2}
-    - ID: Clock
-      Name: "\u0427\u0430\u0441\u044B"
-      Icon: {fileID: 0}
-      voiceType:
-        ID: Clock
-        clip: {fileID: 8300000, guid: 98845e0dcc4574a9b88710aa5c2782af, type: 3}
-        additionClips:
-        - {fileID: 8300000, guid: 31d6b6357622746828c078f79c4cebed, type: 3}
-        - {fileID: 8300000, guid: bd2749d4b749549fca5e3bb9177d25e6, type: 3}
-        - {fileID: 8300000, guid: ccb1689fc29944a72b4a807fc96be84e, type: 3}
-        - {fileID: 8300000, guid: 48ad9bbf5729d4a4987c9b5715116d6b, type: 3}
-        volume: 0.5
-        pitch: 2
-        loop: 0
-        spatialBlend: 1
-        rolloffMode: 0
-        dopplerLevel: 1
-        randomPitchOffset: {x: -0.2, y: 0.1}
-        randomVolumeOffset: {x: 0, y: 0}
-        useReverb: 0
-        preset: 0
-        MixerGroop: {fileID: -1071407340316977573, guid: ffe9d80e515549047a315f339d06c500, type: 2}
-    - ID: Note
-      Name: "\u0417\u0430\u043F\u0438\u0441\u043A\u0430"
-      Icon: {fileID: 0}
-      voiceType:
-        ID: 
-        clip: {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
-        additionClips:
-        - {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
-        - {fileID: 8300000, guid: c6fc1570437806244a5fb4dc1891cb86, type: 3}
-        - {fileID: 8300000, guid: 15bd1e34be2b7b744af0f5ab91730e77, type: 3}
-        - {fileID: 8300000, guid: 03e10797ab6dc26469cebc410958ddb2, type: 3}
-        - {fileID: 8300000, guid: 5c0c52e2da9a0d14ebb9fdc0fbe68ded, type: 3}
-        volume: 1
-        pitch: 1.8
-        loop: 0
-        spatialBlend: 1
-        rolloffMode: 0
-        dopplerLevel: 1
-        randomPitchOffset: {x: -0.2, y: 0.1}
-        randomVolumeOffset: {x: 0, y: 0}
-        useReverb: 0
-        preset: 0
-        MixerGroop: {fileID: -1071407340316977573, guid: ffe9d80e515549047a315f339d06c500, type: 2}
-    - ID: Desk
-      Name: "\u0421\u0442\u043E\u043B"
-      Icon: {fileID: 0}
-      voiceType:
-        ID: 
-        clip: {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
-        additionClips:
-        - {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
-        - {fileID: 8300000, guid: c6fc1570437806244a5fb4dc1891cb86, type: 3}
-        - {fileID: 8300000, guid: 15bd1e34be2b7b744af0f5ab91730e77, type: 3}
-        - {fileID: 8300000, guid: 03e10797ab6dc26469cebc410958ddb2, type: 3}
-        - {fileID: 8300000, guid: 5c0c52e2da9a0d14ebb9fdc0fbe68ded, type: 3}
-        volume: 1
-        pitch: 1
-        loop: 0
-        spatialBlend: 1
-        rolloffMode: 0
-        dopplerLevel: 1
-        randomPitchOffset: {x: -0.2, y: 0.1}
-        randomVolumeOffset: {x: 0, y: 0}
-        useReverb: 0
-        preset: 0
-        MixerGroop: {fileID: -1071407340316977573, guid: ffe9d80e515549047a315f339d06c500, type: 2}
-    - ID: Hanger
-      Name: "\u0412\u0435\u0448\u0430\u043B\u043A\u0430"
-      Icon: {fileID: 0}
-      voiceType:
-        ID: 
-        clip: {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
-        additionClips:
-        - {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
-        - {fileID: 8300000, guid: c6fc1570437806244a5fb4dc1891cb86, type: 3}
-        - {fileID: 8300000, guid: 15bd1e34be2b7b744af0f5ab91730e77, type: 3}
-        - {fileID: 8300000, guid: 03e10797ab6dc26469cebc410958ddb2, type: 3}
-        - {fileID: 8300000, guid: 5c0c52e2da9a0d14ebb9fdc0fbe68ded, type: 3}
-        volume: 1
-        pitch: 1.35
-        loop: 0
-        spatialBlend: 1
-        rolloffMode: 0
-        dopplerLevel: 1
-        randomPitchOffset: {x: -0.2, y: 0.1}
-        randomVolumeOffset: {x: 0, y: 0}
-        useReverb: 0
-        preset: 0
-        MixerGroop: {fileID: -1071407340316977573, guid: ffe9d80e515549047a315f339d06c500, type: 2}
-    - ID: Diary
-      Name: "\u0414\u043D\u0435\u0432\u043D\u0438\u043A"
-      Icon: {fileID: 0}
-      voiceType:
-        ID: 
-        clip: {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
-        additionClips:
-        - {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
-        - {fileID: 8300000, guid: c6fc1570437806244a5fb4dc1891cb86, type: 3}
-        - {fileID: 8300000, guid: 15bd1e34be2b7b744af0f5ab91730e77, type: 3}
-        - {fileID: 8300000, guid: 03e10797ab6dc26469cebc410958ddb2, type: 3}
-        - {fileID: 8300000, guid: 5c0c52e2da9a0d14ebb9fdc0fbe68ded, type: 3}
-        volume: 1
-        pitch: 1
-        loop: 0
-        spatialBlend: 1
-        rolloffMode: 0
-        dopplerLevel: 1
-        randomPitchOffset: {x: -0.2, y: 0.1}
-        randomVolumeOffset: {x: 0, y: 0}
-        useReverb: 0
-        preset: 0
-        MixerGroop: {fileID: -1071407340316977573, guid: ffe9d80e515549047a315f339d06c500, type: 2}
-    - ID: Lamp
-      Name: "\u041B\u0430\u043C\u043F\u0430"
-      Icon: {fileID: 0}
-      voiceType:
-        ID: 
-        clip: {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
-        additionClips:
-        - {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
-        - {fileID: 8300000, guid: c6fc1570437806244a5fb4dc1891cb86, type: 3}
-        - {fileID: 8300000, guid: 15bd1e34be2b7b744af0f5ab91730e77, type: 3}
-        - {fileID: 8300000, guid: 03e10797ab6dc26469cebc410958ddb2, type: 3}
-        - {fileID: 8300000, guid: 5c0c52e2da9a0d14ebb9fdc0fbe68ded, type: 3}
-        volume: 1
-        pitch: 1
-        loop: 0
-        spatialBlend: 1
-        rolloffMode: 0
-        dopplerLevel: 1
-        randomPitchOffset: {x: -0.2, y: 0.1}
-        randomVolumeOffset: {x: 0, y: 0}
-        useReverb: 0
-        preset: 0
-        MixerGroop: {fileID: -1071407340316977573, guid: ffe9d80e515549047a315f339d06c500, type: 2}
-    - ID: Generator
-      Name: "\u0413\u0435\u043D\u0435\u0440\u0430\u0442\u043E\u0440"
-      Icon: {fileID: 0}
-      voiceType:
-        ID: 
-        clip: {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
-        additionClips:
-        - {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
-        - {fileID: 8300000, guid: c6fc1570437806244a5fb4dc1891cb86, type: 3}
-        - {fileID: 8300000, guid: 15bd1e34be2b7b744af0f5ab91730e77, type: 3}
-        - {fileID: 8300000, guid: 03e10797ab6dc26469cebc410958ddb2, type: 3}
-        - {fileID: 8300000, guid: 5c0c52e2da9a0d14ebb9fdc0fbe68ded, type: 3}
-        volume: 1
-        pitch: 0.8
-        loop: 0
-        spatialBlend: 1
-        rolloffMode: 0
-        dopplerLevel: 1
-        randomPitchOffset: {x: -0.2, y: 0.1}
-        randomVolumeOffset: {x: 0, y: 0}
-        useReverb: 1
-        preset: 11
-        MixerGroop: {fileID: -1071407340316977573, guid: ffe9d80e515549047a315f339d06c500, type: 2}
-    - ID: Vase
-      Name: "\u0412\u0430\u0437\u0430"
-      Icon: {fileID: 0}
-      voiceType:
-        ID: Vase
-        clip: {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
-        additionClips:
-        - {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
-        - {fileID: 8300000, guid: c6fc1570437806244a5fb4dc1891cb86, type: 3}
-        - {fileID: 8300000, guid: 15bd1e34be2b7b744af0f5ab91730e77, type: 3}
-        - {fileID: 8300000, guid: 03e10797ab6dc26469cebc410958ddb2, type: 3}
-        - {fileID: 8300000, guid: 5c0c52e2da9a0d14ebb9fdc0fbe68ded, type: 3}
-        volume: 1
-        pitch: 2.5
-        loop: 0
-        spatialBlend: 1
-        rolloffMode: 0
-        dopplerLevel: 1
-        randomPitchOffset: {x: -0.1, y: 0.1}
-        randomVolumeOffset: {x: 0, y: 0}
-        useReverb: 0
-        preset: 0
-        MixerGroop: {fileID: -1071407340316977573, guid: ffe9d80e515549047a315f339d06c500, type: 2}
-    - ID: Fridge
-      Name: "\u0425\u043E\u043B\u043E\u0434\u0438\u043B\u044C\u043D\u0438\u043A"
-      Icon: {fileID: 0}
-      voiceType:
-        ID: 
-        clip: {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
-        additionClips:
-        - {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
-        - {fileID: 8300000, guid: c6fc1570437806244a5fb4dc1891cb86, type: 3}
-        - {fileID: 8300000, guid: 15bd1e34be2b7b744af0f5ab91730e77, type: 3}
-        - {fileID: 8300000, guid: 03e10797ab6dc26469cebc410958ddb2, type: 3}
-        - {fileID: 8300000, guid: 5c0c52e2da9a0d14ebb9fdc0fbe68ded, type: 3}
-        volume: 1
-        pitch: 0.7
-        loop: 0
-        spatialBlend: 1
-        rolloffMode: 0
-        dopplerLevel: 1
-        randomPitchOffset: {x: -0.2, y: 0.1}
-        randomVolumeOffset: {x: 0, y: 0}
-        useReverb: 1
-        preset: 1
-        MixerGroop: {fileID: -1071407340316977573, guid: ffe9d80e515549047a315f339d06c500, type: 2}
-    - ID: Chair
-      Name: "\u0421\u0442\u0443\u043B"
-      Icon: {fileID: 0}
-      voiceType:
-        ID: 
-        clip: {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
-        additionClips:
-        - {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
-        - {fileID: 8300000, guid: c6fc1570437806244a5fb4dc1891cb86, type: 3}
-        - {fileID: 8300000, guid: 15bd1e34be2b7b744af0f5ab91730e77, type: 3}
-        - {fileID: 8300000, guid: 03e10797ab6dc26469cebc410958ddb2, type: 3}
-        - {fileID: 8300000, guid: 5c0c52e2da9a0d14ebb9fdc0fbe68ded, type: 3}
-        volume: 1
-        pitch: 1
-        loop: 0
-        spatialBlend: 1
-        rolloffMode: 0
-        dopplerLevel: 1
-        randomPitchOffset: {x: -0.2, y: 0.1}
-        randomVolumeOffset: {x: 0, y: 0}
-        useReverb: 0
-        preset: 0
-        MixerGroop: {fileID: -1071407340316977573, guid: ffe9d80e515549047a315f339d06c500, type: 2}
-    - ID: Bucket
-      Name: "\u0412\u0435\u0434\u0440\u043E"
-      Icon: {fileID: 0}
-      voiceType:
-        ID: 
-        clip: {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
-        additionClips:
-        - {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
-        - {fileID: 8300000, guid: c6fc1570437806244a5fb4dc1891cb86, type: 3}
-        - {fileID: 8300000, guid: 15bd1e34be2b7b744af0f5ab91730e77, type: 3}
-        - {fileID: 8300000, guid: 03e10797ab6dc26469cebc410958ddb2, type: 3}
-        - {fileID: 8300000, guid: 5c0c52e2da9a0d14ebb9fdc0fbe68ded, type: 3}
-        volume: 1
-        pitch: 1
-        loop: 0
-        spatialBlend: 1
-        rolloffMode: 0
-        dopplerLevel: 1
-        randomPitchOffset: {x: -0.2, y: 0.1}
-        randomVolumeOffset: {x: 0, y: 0}
-        useReverb: 0
-        preset: 0
-        MixerGroop: {fileID: -1071407340316977573, guid: ffe9d80e515549047a315f339d06c500, type: 2}
-    - ID: Mop
-      Name: "\u0428\u0432\u0430\u0431\u0440\u0430"
-      Icon: {fileID: 0}
-      voiceType:
-        ID: 
-        clip: {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
-        additionClips:
-        - {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
-        - {fileID: 8300000, guid: c6fc1570437806244a5fb4dc1891cb86, type: 3}
-        - {fileID: 8300000, guid: 15bd1e34be2b7b744af0f5ab91730e77, type: 3}
-        - {fileID: 8300000, guid: 03e10797ab6dc26469cebc410958ddb2, type: 3}
-        - {fileID: 8300000, guid: 5c0c52e2da9a0d14ebb9fdc0fbe68ded, type: 3}
-        volume: 1
-        pitch: 1
-        loop: 0
-        spatialBlend: 1
-        rolloffMode: 0
-        dopplerLevel: 1
-        randomPitchOffset: {x: -0.2, y: 0.1}
-        randomVolumeOffset: {x: 0, y: 0}
-        useReverb: 0
-        preset: 0
-        MixerGroop: {fileID: -1071407340316977573, guid: ffe9d80e515549047a315f339d06c500, type: 2}
-    - ID: Sink
-      Name: "\u0420\u0430\u043A\u043E\u0432\u0438\u043D\u0430"
-      Icon: {fileID: 0}
-      voiceType:
-        ID: 
-        clip: {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
-        additionClips:
-        - {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
-        - {fileID: 8300000, guid: c6fc1570437806244a5fb4dc1891cb86, type: 3}
-        - {fileID: 8300000, guid: 15bd1e34be2b7b744af0f5ab91730e77, type: 3}
-        - {fileID: 8300000, guid: 03e10797ab6dc26469cebc410958ddb2, type: 3}
-        - {fileID: 8300000, guid: 5c0c52e2da9a0d14ebb9fdc0fbe68ded, type: 3}
-        volume: 1
-        pitch: 1
-        loop: 0
-        spatialBlend: 1
-        rolloffMode: 0
-        dopplerLevel: 1
-        randomPitchOffset: {x: -0.2, y: 0.1}
-        randomVolumeOffset: {x: 0, y: 0}
-        useReverb: 0
-        preset: 0
-        MixerGroop: {fileID: -1071407340316977573, guid: ffe9d80e515549047a315f339d06c500, type: 2}
-    - ID: Toilet
-      Name: "\u0422\u0443\u0430\u043B\u0435\u0442"
-      Icon: {fileID: 0}
-      voiceType:
-        ID: 
-        clip: {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
-        additionClips:
-        - {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
-        - {fileID: 8300000, guid: c6fc1570437806244a5fb4dc1891cb86, type: 3}
-        - {fileID: 8300000, guid: 15bd1e34be2b7b744af0f5ab91730e77, type: 3}
-        - {fileID: 8300000, guid: 03e10797ab6dc26469cebc410958ddb2, type: 3}
-        - {fileID: 8300000, guid: 5c0c52e2da9a0d14ebb9fdc0fbe68ded, type: 3}
-        volume: 1
-        pitch: 1
-        loop: 0
-        spatialBlend: 1
-        rolloffMode: 0
-        dopplerLevel: 1
-        randomPitchOffset: {x: -0.2, y: 0.1}
-        randomVolumeOffset: {x: 0, y: 0}
-        useReverb: 0
-        preset: 0
-        MixerGroop: {fileID: -1071407340316977573, guid: ffe9d80e515549047a315f339d06c500, type: 2}
-    - ID: TrashItem
-      Name: "\u041C\u0443\u0441\u043E\u0440"
-      Icon: {fileID: 0}
-      voiceType:
-        ID: 
-        clip: {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
-        additionClips:
-        - {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
-        - {fileID: 8300000, guid: c6fc1570437806244a5fb4dc1891cb86, type: 3}
-        - {fileID: 8300000, guid: 15bd1e34be2b7b744af0f5ab91730e77, type: 3}
-        - {fileID: 8300000, guid: 03e10797ab6dc26469cebc410958ddb2, type: 3}
-        - {fileID: 8300000, guid: 5c0c52e2da9a0d14ebb9fdc0fbe68ded, type: 3}
-        volume: 1
-        pitch: 1
-        loop: 0
-        spatialBlend: 1
-        rolloffMode: 0
-        dopplerLevel: 1
-        randomPitchOffset: {x: -0.2, y: 0.1}
-        randomVolumeOffset: {x: 0, y: 0}
-        useReverb: 0
-        preset: 0
-        MixerGroop: {fileID: -1071407340316977573, guid: ffe9d80e515549047a315f339d06c500, type: 2}
-    - ID: TrashItem2
-      Name: "\u041C\u0443\u0441\u043E\u0440"
-      Icon: {fileID: 0}
-      voiceType:
-        ID: 
-        clip: {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
-        additionClips:
-        - {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
-        - {fileID: 8300000, guid: c6fc1570437806244a5fb4dc1891cb86, type: 3}
-        - {fileID: 8300000, guid: 15bd1e34be2b7b744af0f5ab91730e77, type: 3}
-        - {fileID: 8300000, guid: 03e10797ab6dc26469cebc410958ddb2, type: 3}
-        - {fileID: 8300000, guid: 5c0c52e2da9a0d14ebb9fdc0fbe68ded, type: 3}
-        volume: 1
-        pitch: 1
-        loop: 0
-        spatialBlend: 1
-        rolloffMode: 0
-        dopplerLevel: 1
-        randomPitchOffset: {x: -0.2, y: 0.1}
-        randomVolumeOffset: {x: 0, y: 0}
-        useReverb: 0
-        preset: 0
-        MixerGroop: {fileID: -1071407340316977573, guid: ffe9d80e515549047a315f339d06c500, type: 2}
-    - ID: DiningTable
-      Name: "\u041E\u0431\u0435\u0434\u0435\u043D\u043D\u044B\u0439 \u0441\u0442\u043E\u043B"
-      Icon: {fileID: 0}
-      voiceType:
-        ID: 
-        clip: {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
-        additionClips:
-        - {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
-        - {fileID: 8300000, guid: c6fc1570437806244a5fb4dc1891cb86, type: 3}
-        - {fileID: 8300000, guid: 15bd1e34be2b7b744af0f5ab91730e77, type: 3}
-        - {fileID: 8300000, guid: 03e10797ab6dc26469cebc410958ddb2, type: 3}
-        - {fileID: 8300000, guid: 5c0c52e2da9a0d14ebb9fdc0fbe68ded, type: 3}
-        volume: 1
-        pitch: 1
-        loop: 0
-        spatialBlend: 1
-        rolloffMode: 0
-        dopplerLevel: 1
-        randomPitchOffset: {x: -0.2, y: 0.1}
-        randomVolumeOffset: {x: 0, y: 0}
-        useReverb: 0
-        preset: 0
-        MixerGroop: {fileID: -1071407340316977573, guid: ffe9d80e515549047a315f339d06c500, type: 2}
-    - ID: TrashWoman
-      Name: "\u041C\u0443\u0441\u043E\u0440(\u0436\u0435\u043D\u0449\u0438\u043D\u0430)"
-      Icon: {fileID: 0}
-      voiceType:
-        ID: 
-        clip: {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
-        additionClips:
-        - {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
-        - {fileID: 8300000, guid: c6fc1570437806244a5fb4dc1891cb86, type: 3}
-        - {fileID: 8300000, guid: 15bd1e34be2b7b744af0f5ab91730e77, type: 3}
-        - {fileID: 8300000, guid: 03e10797ab6dc26469cebc410958ddb2, type: 3}
-        - {fileID: 8300000, guid: 5c0c52e2da9a0d14ebb9fdc0fbe68ded, type: 3}
-        volume: 0.7
-        pitch: 2.5
-        loop: 0
-        spatialBlend: 1
-        rolloffMode: 0
-        dopplerLevel: 1
-        randomPitchOffset: {x: -0.2, y: 0.1}
-        randomVolumeOffset: {x: 0, y: 0}
-        useReverb: 0
-        preset: 0
-        MixerGroop: {fileID: -1071407340316977573, guid: ffe9d80e515549047a315f339d06c500, type: 2}
-    - ID: Bed
-      Name: "\u041A\u0440\u043E\u0432\u0430\u0442\u044C"
-      Icon: {fileID: 0}
-      voiceType:
-        ID: 
-        clip: {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
-        additionClips:
-        - {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
-        - {fileID: 8300000, guid: c6fc1570437806244a5fb4dc1891cb86, type: 3}
-        - {fileID: 8300000, guid: 15bd1e34be2b7b744af0f5ab91730e77, type: 3}
-        - {fileID: 8300000, guid: 03e10797ab6dc26469cebc410958ddb2, type: 3}
-        - {fileID: 8300000, guid: 5c0c52e2da9a0d14ebb9fdc0fbe68ded, type: 3}
-        volume: 1
-        pitch: 1
-        loop: 0
-        spatialBlend: 1
-        rolloffMode: 0
-        dopplerLevel: 1
-        randomPitchOffset: {x: -0.2, y: 0.1}
-        randomVolumeOffset: {x: 0, y: 0}
-        useReverb: 0
-        preset: 0
-        MixerGroop: {fileID: -1071407340316977573, guid: ffe9d80e515549047a315f339d06c500, type: 2}
-    - ID: Balcony
-      Name: "\u0411\u0430\u043B\u043A\u043E\u043D"
-      Icon: {fileID: 0}
-      voiceType:
-        ID: 
-        clip: {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
-        additionClips:
-        - {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
-        - {fileID: 8300000, guid: c6fc1570437806244a5fb4dc1891cb86, type: 3}
-        - {fileID: 8300000, guid: 15bd1e34be2b7b744af0f5ab91730e77, type: 3}
-        - {fileID: 8300000, guid: 03e10797ab6dc26469cebc410958ddb2, type: 3}
-        - {fileID: 8300000, guid: 5c0c52e2da9a0d14ebb9fdc0fbe68ded, type: 3}
-        volume: 1
-        pitch: 1
-        loop: 0
-        spatialBlend: 1
-        rolloffMode: 0
-        dopplerLevel: 1
-        randomPitchOffset: {x: -0.2, y: 0.1}
-        randomVolumeOffset: {x: 0, y: 0}
-        useReverb: 0
-        preset: 0
-        MixerGroop: {fileID: -1071407340316977573, guid: ffe9d80e515549047a315f339d06c500, type: 2}
-    - ID: Lock
-      Name: Lock
-      Icon: {fileID: 0}
-      voiceType:
-        ID: 
-        clip: {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
-        additionClips:
-        - {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
-        - {fileID: 8300000, guid: c6fc1570437806244a5fb4dc1891cb86, type: 3}
-        - {fileID: 8300000, guid: 15bd1e34be2b7b744af0f5ab91730e77, type: 3}
-        - {fileID: 8300000, guid: 03e10797ab6dc26469cebc410958ddb2, type: 3}
-        - {fileID: 8300000, guid: 5c0c52e2da9a0d14ebb9fdc0fbe68ded, type: 3}
-        volume: 1
-        pitch: 1
-        loop: 0
-        spatialBlend: 1
-        rolloffMode: 0
-        dopplerLevel: 1
-        randomPitchOffset: {x: -0.2, y: 0.1}
-        randomVolumeOffset: {x: 0, y: 0}
-        useReverb: 0
-        preset: 0
-        MixerGroop: {fileID: -1071407340316977573, guid: ffe9d80e515549047a315f339d06c500, type: 2}
-    InteractionVis: {fileID: 5800234262247619688, guid: bb2c737eb99c56642a5e8b8d67273ea5, type: 3}
+  m_EditorClassIdentifier: Assembly-CSharp::DimonGameData
+  AnimeSprites:
+  - {fileID: 21300000, guid: 8117b293bc270334894c9aee9a925f19, type: 3}
+  - {fileID: 21300000, guid: 3a8f35e5781c6274aa7244d1d14d7044, type: 3}
+  - {fileID: 21300000, guid: 40592955eea95ae4c8d270207eac8846, type: 3}
+  - {fileID: 21300000, guid: ecf7e6be6fb3bce479485f51fe60942c, type: 3}
+  - {fileID: 21300000, guid: a084189e8cc3d874a9830c5250bba196, type: 3}
+  - {fileID: 21300000, guid: 09e9c8bf94381a849ab637a0d23aa959, type: 3}
+  - {fileID: 21300000, guid: 8130db620c1e67a438db851ee8d3a551, type: 3}
+  - {fileID: 21300000, guid: d5d1a7c6644ddb74aa9c36708761cd86, type: 3}
+  - {fileID: 21300000, guid: 454bc916fe8629c4a86fdf094388ea73, type: 3}
+  - {fileID: 21300000, guid: 6de238c0aa0ad0c4592553844842922f, type: 3}
+  - {fileID: 21300000, guid: 7a297e8266b3b7142a8c34f69fdc9a82, type: 3}
+  - {fileID: 21300000, guid: 733d620bc5061c8468ead08e10e7fda3, type: 3}
+  - {fileID: 21300000, guid: 27ceddb9e7b70284086a97ed4be55aa1, type: 3}
+  - {fileID: 21300000, guid: 673c79965b1ce0244a48767d8e965c36, type: 3}
+  - {fileID: 21300000, guid: b656bc96d3b0f544682a6d3ba7f0a5d7, type: 3}
+  - {fileID: 21300000, guid: 830d140eb61b6044f8d1ff552ff9c191, type: 3}
+  - {fileID: 21300000, guid: eed9744a460bd274d9d9727de3f6885a, type: 3}
+  - {fileID: 21300000, guid: 4cbdc0bf3e26d844f924a8e8629518d1, type: 3}
+  - {fileID: 21300000, guid: 2d8a69eb2265991429508962ef076783, type: 3}
+  - {fileID: 21300000, guid: 20e6c3e9ce74b30498bbcb517ee1a596, type: 3}
+  - {fileID: 21300000, guid: 5bfc622dd9d32f249871a30a6e434806, type: 3}
+  - {fileID: 21300000, guid: bd67cffadb412e64982dbf7f9ca5fd38, type: 3}
+  - {fileID: 21300000, guid: d7fe131609421a2468daf64c2b809941, type: 3}
+  - {fileID: 21300000, guid: 527d8176472e6d54d96d1810f60ce50b, type: 3}
+  - {fileID: 21300000, guid: 20f07a256ce44a648892d1cd1d2f826a, type: 3}
+  - {fileID: 21300000, guid: 9cc6c6c49fcb6b345a9b54c48eac1449, type: 3}
+  - {fileID: 21300000, guid: 75035870207259e4790c87df00d5ed53, type: 3}
+  - {fileID: 21300000, guid: 69291290213954542aa385120e3f2f10, type: 3}
+  - {fileID: 21300000, guid: 289dc47c9797312438b93c43da7486cb, type: 3}
+  - {fileID: 21300000, guid: 090cec0e0815ef14eb7c4c3448eb4e2e, type: 3}
+  - {fileID: 21300000, guid: a7d15a8e90e62ec4ba5eca9fd335675e, type: 3}
+  - {fileID: 21300000, guid: 11d5097b5ff2fa54581d7ee468f8f700, type: 3}
+  - {fileID: 21300000, guid: 8410f3b28b256b5459ea6b014e7f96b0, type: 3}
+  - {fileID: 21300000, guid: 5da641ac62670774bbe5362fca2f5a03, type: 3}
+  - {fileID: 21300000, guid: 4416f7ce01f38fe4482db6ff2d5a5f2a, type: 3}
+  - {fileID: 21300000, guid: 52362abb0530a0745889af5e256fa40d, type: 3}
+  - {fileID: 21300000, guid: e9feb21e95a06d147a271cb383a12bda, type: 3}
+  - {fileID: 21300000, guid: 4d6294cb6df3aeb4d934beb750ef97c9, type: 3}
+  - {fileID: 21300000, guid: 1de3a6d88c5a5264aa673f76f67629fb, type: 3}
+  - {fileID: 21300000, guid: f66561ec85e1b0e4d9831520e406553b, type: 3}
+  - {fileID: 21300000, guid: a5cf0b85c08ac724aaa859d71fd2d623, type: 3}
+  - {fileID: 21300000, guid: 55221bdb26c9bf941bcb24ea23e40265, type: 3}
+  - {fileID: 21300000, guid: 691c99e61e1855840ad3639bf5ef1feb, type: 3}
+  - {fileID: 21300000, guid: 9f2a3312df0404f49b6c1dc2d9d5349e, type: 3}
+  - {fileID: 21300000, guid: 7da644d90e317374c9066def382d83a0, type: 3}
+  - {fileID: 21300000, guid: 12618b9ced463464fbc1fdf3cef841ff, type: 3}
+  - {fileID: 21300000, guid: 8449d408ff50b994abd38cc295b87270, type: 3}
+  - {fileID: 21300000, guid: 17108ffa15cd2ee4ba546fa3f71490f8, type: 3}
+  - {fileID: 21300000, guid: fdda725de2cf40b4cbe8da191a8c2d7b, type: 3}
+  - {fileID: 21300000, guid: 783a4cf5752a7a24f900c2e8158839e4, type: 3}
+  - {fileID: 21300000, guid: 1a6e21b1410c39b42814cc149047d0cc, type: 3}
+  - {fileID: 21300000, guid: a7e1fd5bf24cc7946a5ec635b9dbc7b4, type: 3}
+  - {fileID: 21300000, guid: 8747a639d4e23ac46ac15ab48fbd9517, type: 3}
+  - {fileID: 21300000, guid: 9bda48ee41b84b347af6d00cd646db2e, type: 3}
+  - {fileID: 21300000, guid: 14e81fa819cd9e540872a73311f22f21, type: 3}
+  - {fileID: 21300000, guid: c46d2f7036737a84f9cf65c433d6713d, type: 3}
+  - {fileID: 21300000, guid: 257db2ee47faf8445a5626b82a7a5844, type: 3}
+  - {fileID: 21300000, guid: 17fee8f415c389947b832b99c577788a, type: 3}
+  - {fileID: 21300000, guid: a5b1fcdd53718da47b63d836ec6d475c, type: 3}
+  - {fileID: 21300000, guid: 40bc546a36c31f54187c260cf823c784, type: 3}
+  - {fileID: 21300000, guid: 3f863010da6598144ad3335889d192f4, type: 3}
+  - {fileID: 21300000, guid: 672d2cdec251a3e46a61387fcd9aa43b, type: 3}
+  - {fileID: 21300000, guid: 1876a0727f036db4dbb40900cac01710, type: 3}
+  - {fileID: 21300000, guid: 670c4349c9a35f14aa651bccea9fbfb9, type: 3}
+  - {fileID: 21300000, guid: 0065cb0168d13994b99639fe7db6c1b1, type: 3}
+  - {fileID: 21300000, guid: 5a059d060b3006043896008dd53ad466, type: 3}
+  - {fileID: 21300000, guid: 61c22beb1508a2b41916bf662b83f857, type: 3}
+  - {fileID: 21300000, guid: 5df5a7c89f564b14994400a99426c715, type: 3}
+  - {fileID: 21300000, guid: 4d7ca7fe2ac2fef4bb309e7cf61fe746, type: 3}
+  - {fileID: 21300000, guid: d16699fa4cc5d364ca2efe9c21e367a8, type: 3}
+  - {fileID: 21300000, guid: 2f316a54e012a3a4a855d25d6094a06b, type: 3}
+  - {fileID: 21300000, guid: 07e5d9f32960f3843b09ed1504eaadb1, type: 3}
+  - {fileID: 21300000, guid: d58e39fb503d2794587d3a9e5a2ad57b, type: 3}
+  - {fileID: 21300000, guid: eebb6f16d3947644d83f52428da1daa4, type: 3}
+  - {fileID: 21300000, guid: eebb6f16d3947644d83f52428da1daa4, type: 3}
+  - {fileID: 21300000, guid: d0287037704307f40879a6b92d115cb7, type: 3}
+  - {fileID: 21300000, guid: e4d98447bd2781948a6aed4205df03dc, type: 3}
+  - {fileID: 21300000, guid: b8a027b36b3e37247ae60f1f51bd0ebf, type: 3}
+  - {fileID: 21300000, guid: bb1737352165c634c87484f5060ad6ab, type: 3}
+  - {fileID: 21300000, guid: 01ed7c60ca858b743b9a85a367b2988f, type: 3}
+  - {fileID: 21300000, guid: 118551807d364e94dbc7f164ab2a5dfa, type: 3}
+  SocialReactions:
+  - Type: 0
+    Icon: {fileID: 21300000, guid: c241cbabfc6fedf4198dfb2a28c7a7b0, type: 3}
+    Likes: 1
+    Power: 1
+  - Type: 1
+    Icon: {fileID: 21300000, guid: bdfcb47e34e801740a84bec1671a965d, type: 3}
+    Likes: 1
+    Power: 2
+  - Type: 2
+    Icon: {fileID: 21300000, guid: c6be984e535fc4649bf34467ee12027d, type: 3}
+    Likes: 1
+    Power: 1
+  - Type: 3
+    Icon: {fileID: 21300000, guid: 5b9b99947f3141d4dbd6a25993704793, type: 3}
+    Likes: 1
+    Power: 2
+  - Type: 4
+    Icon: {fileID: 21300000, guid: 9aabc6ef9ea5e574bb5020def9c3d3ad, type: 3}
+    Likes: 1
+    Power: 3
+  - Type: 5
+    Icon: {fileID: 21300000, guid: d752312c96cb9d744889385e4c37f882, type: 3}
+    Likes: 1
+    Power: 2
+  - Type: 6
+    Icon: {fileID: 21300000, guid: b93a138f26888f44fab4f2e820dfb7f4, type: 3}
+    Likes: 1
+    Power: 4
+  - Type: 7
+    Icon: {fileID: 21300000, guid: 4f4231a14a67d854b8a983ab390e40ed, type: 3}
+    Likes: 1
+    Power: 2
+  - Type: 8
+    Icon: {fileID: 21300000, guid: 222906c2511a36d4bbc384902c49f840, type: 3}
+    Likes: -1
+    Power: 1
+  - Type: 9
+    Icon: {fileID: 21300000, guid: 04122d9c2bd1efc45a47d498672af260, type: 3}
+    Likes: 1
+    Power: 4
+  - Type: 10
+    Icon: {fileID: 21300000, guid: 6f550e43ee1896042a68e41c5b313aa5, type: 3}
+    Likes: 1
+    Power: 4
+  - Type: 11
+    Icon: {fileID: 21300000, guid: fe4f78b70f76bd546bb869056d591e3b, type: 3}
+    Likes: 1
+    Power: 5
+  - Type: 12
+    Icon: {fileID: 21300000, guid: c6e260a448cc1884b8670bf4bce78bee, type: 3}
+    Likes: 0
+    Power: 0
+  - Type: 13
+    Icon: {fileID: 21300000, guid: 35942e69d18361049898b67b7e4cb333, type: 3}
+    Likes: 1
+    Power: 5
+  Artists:
+  - ID: A
+    Name: ArtstA
+    Arts: []
+    posts:
+    - MainImageID: 
+      Likes: 2
+      Dislikes: 1
+      virality: 0.5
+      CanEmoji: 000000000300000004000000070000000d0000000c00000008000000
+      Reactions: []
+      MainSpriteDefault: {fileID: 21300000, guid: 8117b293bc270334894c9aee9a925f19, type: 3}
+    - MainImageID: 
+      Likes: 2
+      Dislikes: 1
+      virality: 0.5
+      CanEmoji: 000000000300000004000000070000000d0000000c00000008000000
+      Reactions: []
+      MainSpriteDefault: {fileID: 21300000, guid: 40592955eea95ae4c8d270207eac8846, type: 3}
+    - MainImageID: 
+      Likes: 2
+      Dislikes: 1
+      virality: 0.5
+      CanEmoji: 000000000300000004000000070000000d0000000c00000008000000
+      Reactions: []
+      MainSpriteDefault: {fileID: 21300000, guid: ecf7e6be6fb3bce479485f51fe60942c, type: 3}
+    - MainImageID: 
+      Likes: 2
+      Dislikes: 1
+      virality: 0.5
+      CanEmoji: 000000000300000004000000070000000d0000000c00000008000000
+      Reactions: []
+      MainSpriteDefault: {fileID: 21300000, guid: a084189e8cc3d874a9830c5250bba196, type: 3}
+    - MainImageID: 
+      Likes: 2
+      Dislikes: 1
+      virality: 0.5
+      CanEmoji: 000000000300000004000000070000000d0000000c00000008000000
+      Reactions: []
+      MainSpriteDefault: {fileID: 21300000, guid: 09e9c8bf94381a849ab637a0d23aa959, type: 3}
+    - MainImageID: 
+      Likes: 2
+      Dislikes: 1
+      virality: 0.5
+      CanEmoji: 000000000300000004000000070000000d0000000c00000008000000
+      Reactions: []
+      MainSpriteDefault: {fileID: 21300000, guid: 8130db620c1e67a438db851ee8d3a551, type: 3}
+    - MainImageID: 
+      Likes: 2
+      Dislikes: 1
+      virality: 0.5
+      CanEmoji: 000000000300000004000000070000000d0000000c00000008000000
+      Reactions: []
+      MainSpriteDefault: {fileID: 21300000, guid: d5d1a7c6644ddb74aa9c36708761cd86, type: 3}
+    - MainImageID: 
+      Likes: 2
+      Dislikes: 1
+      virality: 0.5
+      CanEmoji: 000000000300000004000000070000000d0000000c00000008000000
+      Reactions: []
+      MainSpriteDefault: {fileID: 21300000, guid: 454bc916fe8629c4a86fdf094388ea73, type: 3}
+    - MainImageID: 
+      Likes: 2
+      Dislikes: 1
+      virality: 0.5
+      CanEmoji: 000000000300000004000000070000000d0000000c00000008000000
+      Reactions: []
+      MainSpriteDefault: {fileID: 21300000, guid: 6de238c0aa0ad0c4592553844842922f, type: 3}
+    - MainImageID: 
+      Likes: 2
+      Dislikes: 1
+      virality: 0.5
+      CanEmoji: 000000000300000004000000070000000d0000000c00000008000000
+      Reactions: []
+      MainSpriteDefault: {fileID: 21300000, guid: 7a297e8266b3b7142a8c34f69fdc9a82, type: 3}
+    - MainImageID: 
+      Likes: 2
+      Dislikes: 1
+      virality: 0.5
+      CanEmoji: 000000000300000004000000070000000d0000000c00000008000000
+      Reactions: []
+      MainSpriteDefault: {fileID: 21300000, guid: 733d620bc5061c8468ead08e10e7fda3, type: 3}
+    - MainImageID: 
+      Likes: 2
+      Dislikes: 1
+      virality: 0.5
+      CanEmoji: 000000000300000004000000070000000d0000000c00000008000000
+      Reactions: []
+      MainSpriteDefault: {fileID: 21300000, guid: a7d15a8e90e62ec4ba5eca9fd335675e, type: 3}
+    - MainImageID: 
+      Likes: 2
+      Dislikes: 1
+      virality: 0.5
+      CanEmoji: 000000000300000004000000070000000d0000000c00000008000000
+      Reactions: []
+      MainSpriteDefault: {fileID: 21300000, guid: 289dc47c9797312438b93c43da7486cb, type: 3}
+    - MainImageID: 
+      Likes: 2
+      Dislikes: 1
+      virality: 0.5
+      CanEmoji: 000000000300000004000000070000000d0000000c00000008000000
+      Reactions: []
+      MainSpriteDefault: {fileID: 21300000, guid: 69291290213954542aa385120e3f2f10, type: 3}
+    - MainImageID: 
+      Likes: 2
+      Dislikes: 1
+      virality: 0.5
+      CanEmoji: 000000000300000004000000070000000d0000000c00000008000000
+      Reactions: []
+      MainSpriteDefault: {fileID: 21300000, guid: a5cf0b85c08ac724aaa859d71fd2d623, type: 3}
+    - MainImageID: 
+      Likes: 2
+      Dislikes: 1
+      virality: 0.5
+      CanEmoji: 000000000300000004000000070000000d0000000c00000008000000
+      Reactions: []
+      MainSpriteDefault: {fileID: 21300000, guid: 17108ffa15cd2ee4ba546fa3f71490f8, type: 3}
+    PostInterval: {x: 5, y: 15}
+  - ID: B
+    Name: ArtstB
+    Arts: []
+    posts:
+    - MainImageID: 
+      Likes: 2
+      Dislikes: 1
+      virality: 0.5
+      CanEmoji: 000000000300000004000000070000000d0000000c00000008000000
+      Reactions: []
+      MainSpriteDefault: {fileID: 21300000, guid: d7fe131609421a2468daf64c2b809941, type: 3}
+    - MainImageID: 
+      Likes: 2
+      Dislikes: 1
+      virality: 0.5
+      CanEmoji: 000000000300000004000000070000000d0000000c00000008000000
+      Reactions: []
+      MainSpriteDefault: {fileID: 21300000, guid: bd67cffadb412e64982dbf7f9ca5fd38, type: 3}
+    - MainImageID: 
+      Likes: 2
+      Dislikes: 1
+      virality: 0.5
+      CanEmoji: 000000000300000004000000070000000d0000000c00000008000000
+      Reactions: []
+      MainSpriteDefault: {fileID: 21300000, guid: 5bfc622dd9d32f249871a30a6e434806, type: 3}
+    - MainImageID: 
+      Likes: 2
+      Dislikes: 1
+      virality: 0.5
+      CanEmoji: 000000000300000004000000070000000d0000000c00000008000000
+      Reactions: []
+      MainSpriteDefault: {fileID: 21300000, guid: 20e6c3e9ce74b30498bbcb517ee1a596, type: 3}
+    - MainImageID: 
+      Likes: 2
+      Dislikes: 1
+      virality: 0.5
+      CanEmoji: 000000000300000004000000070000000d0000000c00000008000000
+      Reactions: []
+      MainSpriteDefault: {fileID: 21300000, guid: 2d8a69eb2265991429508962ef076783, type: 3}
+    - MainImageID: 
+      Likes: 2
+      Dislikes: 1
+      virality: 0.5
+      CanEmoji: 000000000300000004000000070000000d0000000c00000008000000
+      Reactions: []
+      MainSpriteDefault: {fileID: 21300000, guid: 4cbdc0bf3e26d844f924a8e8629518d1, type: 3}
+    - MainImageID: 
+      Likes: 2
+      Dislikes: 1
+      virality: 0.5
+      CanEmoji: 000000000300000004000000070000000d0000000c00000008000000
+      Reactions: []
+      MainSpriteDefault: {fileID: 21300000, guid: eed9744a460bd274d9d9727de3f6885a, type: 3}
+    - MainImageID: 
+      Likes: 2
+      Dislikes: 1
+      virality: 0.5
+      CanEmoji: 000000000300000004000000070000000d0000000c00000008000000
+      Reactions: []
+      MainSpriteDefault: {fileID: 21300000, guid: 830d140eb61b6044f8d1ff552ff9c191, type: 3}
+    - MainImageID: 
+      Likes: 2
+      Dislikes: 1
+      virality: 0.5
+      CanEmoji: 000000000300000004000000070000000d0000000c00000008000000
+      Reactions: []
+      MainSpriteDefault: {fileID: 21300000, guid: b656bc96d3b0f544682a6d3ba7f0a5d7, type: 3}
+    - MainImageID: 
+      Likes: 2
+      Dislikes: 1
+      virality: 0.5
+      CanEmoji: 000000000300000004000000070000000d0000000c00000008000000
+      Reactions: []
+      MainSpriteDefault: {fileID: 21300000, guid: 673c79965b1ce0244a48767d8e965c36, type: 3}
+    - MainImageID: 
+      Likes: 2
+      Dislikes: 1
+      virality: 0.5
+      CanEmoji: 000000000300000004000000070000000d0000000c00000008000000
+      Reactions: []
+      MainSpriteDefault: {fileID: 21300000, guid: 27ceddb9e7b70284086a97ed4be55aa1, type: 3}
+    - MainImageID: 
+      Likes: 2
+      Dislikes: 1
+      virality: 0.5
+      CanEmoji: 000000000300000004000000070000000d0000000c00000008000000
+      Reactions: []
+      MainSpriteDefault: {fileID: 21300000, guid: 1a6e21b1410c39b42814cc149047d0cc, type: 3}
+    - MainImageID: 
+      Likes: 2
+      Dislikes: 1
+      virality: 0.5
+      CanEmoji: 000000000300000004000000070000000d0000000c00000008000000
+      Reactions: []
+      MainSpriteDefault: {fileID: 21300000, guid: 8410f3b28b256b5459ea6b014e7f96b0, type: 3}
+    - MainImageID: 
+      Likes: 2
+      Dislikes: 1
+      virality: 0.5
+      CanEmoji: 000000000300000004000000070000000d0000000c00000008000000
+      Reactions: []
+      MainSpriteDefault: {fileID: 21300000, guid: fdda725de2cf40b4cbe8da191a8c2d7b, type: 3}
+    - MainImageID: 
+      Likes: 2
+      Dislikes: 1
+      virality: 0.5
+      CanEmoji: 000000000300000004000000070000000d0000000c00000008000000
+      Reactions: []
+      MainSpriteDefault: {fileID: 21300000, guid: 8449d408ff50b994abd38cc295b87270, type: 3}
+    - MainImageID: 
+      Likes: 2
+      Dislikes: 1
+      virality: 0.5
+      CanEmoji: 000000000300000004000000070000000d0000000c00000008000000
+      Reactions: []
+      MainSpriteDefault: {fileID: 21300000, guid: 672d2cdec251a3e46a61387fcd9aa43b, type: 3}
+    PostInterval: {x: 5, y: 15}
+  playerResources:
+  - title: Likes
+    _value: 0
+    _clampRange: {x: 0, y: 15}
+    interfaceData:
+      Title: Likes
+      Color:
+        LassZero: {r: 0, g: 0, b: 0, a: 0}
+        Zero: {r: 0, g: 0, b: 0, a: 0}
+        GreaterZero: {r: 0, g: 0, b: 0, a: 0}
+      SizeKof: 1
+      Prefix: 
+      Postfix: 
+  - title: Stars
+    _value: 0
+    _clampRange: {x: 0, y: 9999999}
+    interfaceData:
+      Title: Stars
+      Color:
+        LassZero: {r: 0, g: 0, b: 0, a: 0}
+        Zero: {r: 0, g: 0, b: 0, a: 0}
+        GreaterZero: {r: 0, g: 0, b: 0, a: 0}
+      SizeKof: 1
+      Prefix: 
+      Postfix: 
