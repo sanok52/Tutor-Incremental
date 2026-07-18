@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d096b2e176fd8744bb6feb2dd2b160bf
+timeCreated: 1484927407
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 81051
+  packageName: Simple spaceships
+  packageVersion: 1.0
+  assetPath: Assets/spaceship_sprites/prefabs/spaceship_6.prefab
+  uploadId: 157461

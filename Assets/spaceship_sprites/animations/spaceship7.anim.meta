@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a78d7a91151e95040a59ca99d0c315a9
+timeCreated: 1484927533
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 81051
+  packageName: Simple spaceships
+  packageVersion: 1.0
+  assetPath: Assets/spaceship_sprites/animations/spaceship7.anim
+  uploadId: 157461

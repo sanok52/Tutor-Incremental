@@ -1,0 +1,648 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5620338540645584181
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7579561518162841638}
+  - component: {fileID: 6176933039374305272}
+  m_Layer: 0
+  m_Name: GlobalData
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7579561518162841638
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5620338540645584181}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 400.38235, y: 282.71887, z: 5.22298}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6176933039374305272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5620338540645584181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ead2e421aa802d04fb8c1413349addb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GlobalDataContainer
+  Data:
+    PlayerResourcesInt: []
+    PlayerResourcesFloat: []
+    SpikersDatas:
+    - ID: Mirror
+      Name: "\u0417\u0435\u0440\u043A\u0430\u043B\u043E"
+      Icon: {fileID: 0}
+      voiceType:
+        ID: 
+        clip: {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
+        additionClips:
+        - {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
+        - {fileID: 8300000, guid: c6fc1570437806244a5fb4dc1891cb86, type: 3}
+        - {fileID: 8300000, guid: 15bd1e34be2b7b744af0f5ab91730e77, type: 3}
+        - {fileID: 8300000, guid: 03e10797ab6dc26469cebc410958ddb2, type: 3}
+        - {fileID: 8300000, guid: 5c0c52e2da9a0d14ebb9fdc0fbe68ded, type: 3}
+        volume: 1
+        pitch: 0.9
+        loop: 0
+        spatialBlend: 1
+        rolloffMode: 0
+        dopplerLevel: 1
+        randomPitchOffset: {x: -0.2, y: 0}
+        randomVolumeOffset: {x: 0, y: 0}
+        useReverb: 0
+        preset: 0
+        MixerGroop: {fileID: -1071407340316977573, guid: ffe9d80e515549047a315f339d06c500, type: 2}
+    - ID: Cabinet
+      Name: "\u0428\u043A\u0430\u0444"
+      Icon: {fileID: 0}
+      voiceType:
+        ID: 
+        clip: {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
+        additionClips:
+        - {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
+        - {fileID: 8300000, guid: c6fc1570437806244a5fb4dc1891cb86, type: 3}
+        - {fileID: 8300000, guid: 15bd1e34be2b7b744af0f5ab91730e77, type: 3}
+        - {fileID: 8300000, guid: 03e10797ab6dc26469cebc410958ddb2, type: 3}
+        - {fileID: 8300000, guid: 5c0c52e2da9a0d14ebb9fdc0fbe68ded, type: 3}
+        volume: 1
+        pitch: 1.4
+        loop: 0
+        spatialBlend: 1
+        rolloffMode: 0
+        dopplerLevel: 1
+        randomPitchOffset: {x: -0.2, y: 0.1}
+        randomVolumeOffset: {x: 0, y: 0}
+        useReverb: 0
+        preset: 0
+        MixerGroop: {fileID: -1071407340316977573, guid: ffe9d80e515549047a315f339d06c500, type: 2}
+    - ID: TrashBin
+      Name: "\u041C\u0443\u0441\u043E\u0440\u043D\u044B\u0439 \u0431\u0430\u043A"
+      Icon: {fileID: 0}
+      voiceType:
+        ID: 
+        clip: {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
+        additionClips:
+        - {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
+        - {fileID: 8300000, guid: c6fc1570437806244a5fb4dc1891cb86, type: 3}
+        - {fileID: 8300000, guid: 15bd1e34be2b7b744af0f5ab91730e77, type: 3}
+        - {fileID: 8300000, guid: 03e10797ab6dc26469cebc410958ddb2, type: 3}
+        - {fileID: 8300000, guid: 5c0c52e2da9a0d14ebb9fdc0fbe68ded, type: 3}
+        volume: 1
+        pitch: 2
+        loop: 0
+        spatialBlend: 1
+        rolloffMode: 0
+        dopplerLevel: 1
+        randomPitchOffset: {x: -0.2, y: 0.1}
+        randomVolumeOffset: {x: 0, y: 0}
+        useReverb: 0
+        preset: 0
+        MixerGroop: {fileID: -1071407340316977573, guid: ffe9d80e515549047a315f339d06c500, type: 2}
+    - ID: Door
+      Name: "\u0414\u0432\u0435\u0440\u044C"
+      Icon: {fileID: 0}
+      voiceType:
+        ID: 
+        clip: {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
+        additionClips:
+        - {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
+        - {fileID: 8300000, guid: c6fc1570437806244a5fb4dc1891cb86, type: 3}
+        - {fileID: 8300000, guid: 15bd1e34be2b7b744af0f5ab91730e77, type: 3}
+        - {fileID: 8300000, guid: 03e10797ab6dc26469cebc410958ddb2, type: 3}
+        - {fileID: 8300000, guid: 5c0c52e2da9a0d14ebb9fdc0fbe68ded, type: 3}
+        volume: 1
+        pitch: 0.5
+        loop: 0
+        spatialBlend: 1
+        rolloffMode: 0
+        dopplerLevel: 1
+        randomPitchOffset: {x: -0.2, y: 0.1}
+        randomVolumeOffset: {x: 0, y: 0}
+        useReverb: 0
+        preset: 0
+        MixerGroop: {fileID: -1071407340316977573, guid: ffe9d80e515549047a315f339d06c500, type: 2}
+    - ID: Stove
+      Name: "\u041F\u043B\u0438\u0442\u0430"
+      Icon: {fileID: 0}
+      voiceType:
+        ID: 
+        clip: {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
+        additionClips:
+        - {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
+        - {fileID: 8300000, guid: c6fc1570437806244a5fb4dc1891cb86, type: 3}
+        - {fileID: 8300000, guid: 15bd1e34be2b7b744af0f5ab91730e77, type: 3}
+        - {fileID: 8300000, guid: 03e10797ab6dc26469cebc410958ddb2, type: 3}
+        - {fileID: 8300000, guid: 5c0c52e2da9a0d14ebb9fdc0fbe68ded, type: 3}
+        volume: 0.5
+        pitch: 2.2
+        loop: 0
+        spatialBlend: 1
+        rolloffMode: 0
+        dopplerLevel: 1
+        randomPitchOffset: {x: -0.5, y: 0.5}
+        randomVolumeOffset: {x: 0, y: 0}
+        useReverb: 1
+        preset: 3
+        MixerGroop: {fileID: -1071407340316977573, guid: ffe9d80e515549047a315f339d06c500, type: 2}
+    - ID: Clock
+      Name: "\u0427\u0430\u0441\u044B"
+      Icon: {fileID: 0}
+      voiceType:
+        ID: Clock
+        clip: {fileID: 8300000, guid: 98845e0dcc4574a9b88710aa5c2782af, type: 3}
+        additionClips:
+        - {fileID: 8300000, guid: 31d6b6357622746828c078f79c4cebed, type: 3}
+        - {fileID: 8300000, guid: bd2749d4b749549fca5e3bb9177d25e6, type: 3}
+        - {fileID: 8300000, guid: ccb1689fc29944a72b4a807fc96be84e, type: 3}
+        - {fileID: 8300000, guid: 48ad9bbf5729d4a4987c9b5715116d6b, type: 3}
+        volume: 0.5
+        pitch: 2
+        loop: 0
+        spatialBlend: 1
+        rolloffMode: 0
+        dopplerLevel: 1
+        randomPitchOffset: {x: -0.2, y: 0.1}
+        randomVolumeOffset: {x: 0, y: 0}
+        useReverb: 0
+        preset: 0
+        MixerGroop: {fileID: -1071407340316977573, guid: ffe9d80e515549047a315f339d06c500, type: 2}
+    - ID: Note
+      Name: "\u0417\u0430\u043F\u0438\u0441\u043A\u0430"
+      Icon: {fileID: 0}
+      voiceType:
+        ID: 
+        clip: {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
+        additionClips:
+        - {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
+        - {fileID: 8300000, guid: c6fc1570437806244a5fb4dc1891cb86, type: 3}
+        - {fileID: 8300000, guid: 15bd1e34be2b7b744af0f5ab91730e77, type: 3}
+        - {fileID: 8300000, guid: 03e10797ab6dc26469cebc410958ddb2, type: 3}
+        - {fileID: 8300000, guid: 5c0c52e2da9a0d14ebb9fdc0fbe68ded, type: 3}
+        volume: 1
+        pitch: 1.8
+        loop: 0
+        spatialBlend: 1
+        rolloffMode: 0
+        dopplerLevel: 1
+        randomPitchOffset: {x: -0.2, y: 0.1}
+        randomVolumeOffset: {x: 0, y: 0}
+        useReverb: 0
+        preset: 0
+        MixerGroop: {fileID: -1071407340316977573, guid: ffe9d80e515549047a315f339d06c500, type: 2}
+    - ID: Desk
+      Name: "\u0421\u0442\u043E\u043B"
+      Icon: {fileID: 0}
+      voiceType:
+        ID: 
+        clip: {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
+        additionClips:
+        - {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
+        - {fileID: 8300000, guid: c6fc1570437806244a5fb4dc1891cb86, type: 3}
+        - {fileID: 8300000, guid: 15bd1e34be2b7b744af0f5ab91730e77, type: 3}
+        - {fileID: 8300000, guid: 03e10797ab6dc26469cebc410958ddb2, type: 3}
+        - {fileID: 8300000, guid: 5c0c52e2da9a0d14ebb9fdc0fbe68ded, type: 3}
+        volume: 1
+        pitch: 1
+        loop: 0
+        spatialBlend: 1
+        rolloffMode: 0
+        dopplerLevel: 1
+        randomPitchOffset: {x: -0.2, y: 0.1}
+        randomVolumeOffset: {x: 0, y: 0}
+        useReverb: 0
+        preset: 0
+        MixerGroop: {fileID: -1071407340316977573, guid: ffe9d80e515549047a315f339d06c500, type: 2}
+    - ID: Hanger
+      Name: "\u0412\u0435\u0448\u0430\u043B\u043A\u0430"
+      Icon: {fileID: 0}
+      voiceType:
+        ID: 
+        clip: {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
+        additionClips:
+        - {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
+        - {fileID: 8300000, guid: c6fc1570437806244a5fb4dc1891cb86, type: 3}
+        - {fileID: 8300000, guid: 15bd1e34be2b7b744af0f5ab91730e77, type: 3}
+        - {fileID: 8300000, guid: 03e10797ab6dc26469cebc410958ddb2, type: 3}
+        - {fileID: 8300000, guid: 5c0c52e2da9a0d14ebb9fdc0fbe68ded, type: 3}
+        volume: 1
+        pitch: 1.35
+        loop: 0
+        spatialBlend: 1
+        rolloffMode: 0
+        dopplerLevel: 1
+        randomPitchOffset: {x: -0.2, y: 0.1}
+        randomVolumeOffset: {x: 0, y: 0}
+        useReverb: 0
+        preset: 0
+        MixerGroop: {fileID: -1071407340316977573, guid: ffe9d80e515549047a315f339d06c500, type: 2}
+    - ID: Diary
+      Name: "\u0414\u043D\u0435\u0432\u043D\u0438\u043A"
+      Icon: {fileID: 0}
+      voiceType:
+        ID: 
+        clip: {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
+        additionClips:
+        - {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
+        - {fileID: 8300000, guid: c6fc1570437806244a5fb4dc1891cb86, type: 3}
+        - {fileID: 8300000, guid: 15bd1e34be2b7b744af0f5ab91730e77, type: 3}
+        - {fileID: 8300000, guid: 03e10797ab6dc26469cebc410958ddb2, type: 3}
+        - {fileID: 8300000, guid: 5c0c52e2da9a0d14ebb9fdc0fbe68ded, type: 3}
+        volume: 1
+        pitch: 1
+        loop: 0
+        spatialBlend: 1
+        rolloffMode: 0
+        dopplerLevel: 1
+        randomPitchOffset: {x: -0.2, y: 0.1}
+        randomVolumeOffset: {x: 0, y: 0}
+        useReverb: 0
+        preset: 0
+        MixerGroop: {fileID: -1071407340316977573, guid: ffe9d80e515549047a315f339d06c500, type: 2}
+    - ID: Lamp
+      Name: "\u041B\u0430\u043C\u043F\u0430"
+      Icon: {fileID: 0}
+      voiceType:
+        ID: 
+        clip: {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
+        additionClips:
+        - {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
+        - {fileID: 8300000, guid: c6fc1570437806244a5fb4dc1891cb86, type: 3}
+        - {fileID: 8300000, guid: 15bd1e34be2b7b744af0f5ab91730e77, type: 3}
+        - {fileID: 8300000, guid: 03e10797ab6dc26469cebc410958ddb2, type: 3}
+        - {fileID: 8300000, guid: 5c0c52e2da9a0d14ebb9fdc0fbe68ded, type: 3}
+        volume: 1
+        pitch: 1
+        loop: 0
+        spatialBlend: 1
+        rolloffMode: 0
+        dopplerLevel: 1
+        randomPitchOffset: {x: -0.2, y: 0.1}
+        randomVolumeOffset: {x: 0, y: 0}
+        useReverb: 0
+        preset: 0
+        MixerGroop: {fileID: -1071407340316977573, guid: ffe9d80e515549047a315f339d06c500, type: 2}
+    - ID: Generator
+      Name: "\u0413\u0435\u043D\u0435\u0440\u0430\u0442\u043E\u0440"
+      Icon: {fileID: 0}
+      voiceType:
+        ID: 
+        clip: {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
+        additionClips:
+        - {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
+        - {fileID: 8300000, guid: c6fc1570437806244a5fb4dc1891cb86, type: 3}
+        - {fileID: 8300000, guid: 15bd1e34be2b7b744af0f5ab91730e77, type: 3}
+        - {fileID: 8300000, guid: 03e10797ab6dc26469cebc410958ddb2, type: 3}
+        - {fileID: 8300000, guid: 5c0c52e2da9a0d14ebb9fdc0fbe68ded, type: 3}
+        volume: 1
+        pitch: 0.8
+        loop: 0
+        spatialBlend: 1
+        rolloffMode: 0
+        dopplerLevel: 1
+        randomPitchOffset: {x: -0.2, y: 0.1}
+        randomVolumeOffset: {x: 0, y: 0}
+        useReverb: 1
+        preset: 11
+        MixerGroop: {fileID: -1071407340316977573, guid: ffe9d80e515549047a315f339d06c500, type: 2}
+    - ID: Vase
+      Name: "\u0412\u0430\u0437\u0430"
+      Icon: {fileID: 0}
+      voiceType:
+        ID: Vase
+        clip: {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
+        additionClips:
+        - {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
+        - {fileID: 8300000, guid: c6fc1570437806244a5fb4dc1891cb86, type: 3}
+        - {fileID: 8300000, guid: 15bd1e34be2b7b744af0f5ab91730e77, type: 3}
+        - {fileID: 8300000, guid: 03e10797ab6dc26469cebc410958ddb2, type: 3}
+        - {fileID: 8300000, guid: 5c0c52e2da9a0d14ebb9fdc0fbe68ded, type: 3}
+        volume: 1
+        pitch: 2.5
+        loop: 0
+        spatialBlend: 1
+        rolloffMode: 0
+        dopplerLevel: 1
+        randomPitchOffset: {x: -0.1, y: 0.1}
+        randomVolumeOffset: {x: 0, y: 0}
+        useReverb: 0
+        preset: 0
+        MixerGroop: {fileID: -1071407340316977573, guid: ffe9d80e515549047a315f339d06c500, type: 2}
+    - ID: Fridge
+      Name: "\u0425\u043E\u043B\u043E\u0434\u0438\u043B\u044C\u043D\u0438\u043A"
+      Icon: {fileID: 0}
+      voiceType:
+        ID: 
+        clip: {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
+        additionClips:
+        - {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
+        - {fileID: 8300000, guid: c6fc1570437806244a5fb4dc1891cb86, type: 3}
+        - {fileID: 8300000, guid: 15bd1e34be2b7b744af0f5ab91730e77, type: 3}
+        - {fileID: 8300000, guid: 03e10797ab6dc26469cebc410958ddb2, type: 3}
+        - {fileID: 8300000, guid: 5c0c52e2da9a0d14ebb9fdc0fbe68ded, type: 3}
+        volume: 1
+        pitch: 0.7
+        loop: 0
+        spatialBlend: 1
+        rolloffMode: 0
+        dopplerLevel: 1
+        randomPitchOffset: {x: -0.2, y: 0.1}
+        randomVolumeOffset: {x: 0, y: 0}
+        useReverb: 1
+        preset: 1
+        MixerGroop: {fileID: -1071407340316977573, guid: ffe9d80e515549047a315f339d06c500, type: 2}
+    - ID: Chair
+      Name: "\u0421\u0442\u0443\u043B"
+      Icon: {fileID: 0}
+      voiceType:
+        ID: 
+        clip: {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
+        additionClips:
+        - {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
+        - {fileID: 8300000, guid: c6fc1570437806244a5fb4dc1891cb86, type: 3}
+        - {fileID: 8300000, guid: 15bd1e34be2b7b744af0f5ab91730e77, type: 3}
+        - {fileID: 8300000, guid: 03e10797ab6dc26469cebc410958ddb2, type: 3}
+        - {fileID: 8300000, guid: 5c0c52e2da9a0d14ebb9fdc0fbe68ded, type: 3}
+        volume: 1
+        pitch: 1
+        loop: 0
+        spatialBlend: 1
+        rolloffMode: 0
+        dopplerLevel: 1
+        randomPitchOffset: {x: -0.2, y: 0.1}
+        randomVolumeOffset: {x: 0, y: 0}
+        useReverb: 0
+        preset: 0
+        MixerGroop: {fileID: -1071407340316977573, guid: ffe9d80e515549047a315f339d06c500, type: 2}
+    - ID: Bucket
+      Name: "\u0412\u0435\u0434\u0440\u043E"
+      Icon: {fileID: 0}
+      voiceType:
+        ID: 
+        clip: {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
+        additionClips:
+        - {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
+        - {fileID: 8300000, guid: c6fc1570437806244a5fb4dc1891cb86, type: 3}
+        - {fileID: 8300000, guid: 15bd1e34be2b7b744af0f5ab91730e77, type: 3}
+        - {fileID: 8300000, guid: 03e10797ab6dc26469cebc410958ddb2, type: 3}
+        - {fileID: 8300000, guid: 5c0c52e2da9a0d14ebb9fdc0fbe68ded, type: 3}
+        volume: 1
+        pitch: 1
+        loop: 0
+        spatialBlend: 1
+        rolloffMode: 0
+        dopplerLevel: 1
+        randomPitchOffset: {x: -0.2, y: 0.1}
+        randomVolumeOffset: {x: 0, y: 0}
+        useReverb: 0
+        preset: 0
+        MixerGroop: {fileID: -1071407340316977573, guid: ffe9d80e515549047a315f339d06c500, type: 2}
+    - ID: Mop
+      Name: "\u0428\u0432\u0430\u0431\u0440\u0430"
+      Icon: {fileID: 0}
+      voiceType:
+        ID: 
+        clip: {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
+        additionClips:
+        - {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
+        - {fileID: 8300000, guid: c6fc1570437806244a5fb4dc1891cb86, type: 3}
+        - {fileID: 8300000, guid: 15bd1e34be2b7b744af0f5ab91730e77, type: 3}
+        - {fileID: 8300000, guid: 03e10797ab6dc26469cebc410958ddb2, type: 3}
+        - {fileID: 8300000, guid: 5c0c52e2da9a0d14ebb9fdc0fbe68ded, type: 3}
+        volume: 1
+        pitch: 1
+        loop: 0
+        spatialBlend: 1
+        rolloffMode: 0
+        dopplerLevel: 1
+        randomPitchOffset: {x: -0.2, y: 0.1}
+        randomVolumeOffset: {x: 0, y: 0}
+        useReverb: 0
+        preset: 0
+        MixerGroop: {fileID: -1071407340316977573, guid: ffe9d80e515549047a315f339d06c500, type: 2}
+    - ID: Sink
+      Name: "\u0420\u0430\u043A\u043E\u0432\u0438\u043D\u0430"
+      Icon: {fileID: 0}
+      voiceType:
+        ID: 
+        clip: {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
+        additionClips:
+        - {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
+        - {fileID: 8300000, guid: c6fc1570437806244a5fb4dc1891cb86, type: 3}
+        - {fileID: 8300000, guid: 15bd1e34be2b7b744af0f5ab91730e77, type: 3}
+        - {fileID: 8300000, guid: 03e10797ab6dc26469cebc410958ddb2, type: 3}
+        - {fileID: 8300000, guid: 5c0c52e2da9a0d14ebb9fdc0fbe68ded, type: 3}
+        volume: 1
+        pitch: 1
+        loop: 0
+        spatialBlend: 1
+        rolloffMode: 0
+        dopplerLevel: 1
+        randomPitchOffset: {x: -0.2, y: 0.1}
+        randomVolumeOffset: {x: 0, y: 0}
+        useReverb: 0
+        preset: 0
+        MixerGroop: {fileID: -1071407340316977573, guid: ffe9d80e515549047a315f339d06c500, type: 2}
+    - ID: Toilet
+      Name: "\u0422\u0443\u0430\u043B\u0435\u0442"
+      Icon: {fileID: 0}
+      voiceType:
+        ID: 
+        clip: {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
+        additionClips:
+        - {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
+        - {fileID: 8300000, guid: c6fc1570437806244a5fb4dc1891cb86, type: 3}
+        - {fileID: 8300000, guid: 15bd1e34be2b7b744af0f5ab91730e77, type: 3}
+        - {fileID: 8300000, guid: 03e10797ab6dc26469cebc410958ddb2, type: 3}
+        - {fileID: 8300000, guid: 5c0c52e2da9a0d14ebb9fdc0fbe68ded, type: 3}
+        volume: 1
+        pitch: 1
+        loop: 0
+        spatialBlend: 1
+        rolloffMode: 0
+        dopplerLevel: 1
+        randomPitchOffset: {x: -0.2, y: 0.1}
+        randomVolumeOffset: {x: 0, y: 0}
+        useReverb: 0
+        preset: 0
+        MixerGroop: {fileID: -1071407340316977573, guid: ffe9d80e515549047a315f339d06c500, type: 2}
+    - ID: TrashItem
+      Name: "\u041C\u0443\u0441\u043E\u0440"
+      Icon: {fileID: 0}
+      voiceType:
+        ID: 
+        clip: {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
+        additionClips:
+        - {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
+        - {fileID: 8300000, guid: c6fc1570437806244a5fb4dc1891cb86, type: 3}
+        - {fileID: 8300000, guid: 15bd1e34be2b7b744af0f5ab91730e77, type: 3}
+        - {fileID: 8300000, guid: 03e10797ab6dc26469cebc410958ddb2, type: 3}
+        - {fileID: 8300000, guid: 5c0c52e2da9a0d14ebb9fdc0fbe68ded, type: 3}
+        volume: 1
+        pitch: 1
+        loop: 0
+        spatialBlend: 1
+        rolloffMode: 0
+        dopplerLevel: 1
+        randomPitchOffset: {x: -0.2, y: 0.1}
+        randomVolumeOffset: {x: 0, y: 0}
+        useReverb: 0
+        preset: 0
+        MixerGroop: {fileID: -1071407340316977573, guid: ffe9d80e515549047a315f339d06c500, type: 2}
+    - ID: TrashItem2
+      Name: "\u041C\u0443\u0441\u043E\u0440"
+      Icon: {fileID: 0}
+      voiceType:
+        ID: 
+        clip: {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
+        additionClips:
+        - {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
+        - {fileID: 8300000, guid: c6fc1570437806244a5fb4dc1891cb86, type: 3}
+        - {fileID: 8300000, guid: 15bd1e34be2b7b744af0f5ab91730e77, type: 3}
+        - {fileID: 8300000, guid: 03e10797ab6dc26469cebc410958ddb2, type: 3}
+        - {fileID: 8300000, guid: 5c0c52e2da9a0d14ebb9fdc0fbe68ded, type: 3}
+        volume: 1
+        pitch: 1
+        loop: 0
+        spatialBlend: 1
+        rolloffMode: 0
+        dopplerLevel: 1
+        randomPitchOffset: {x: -0.2, y: 0.1}
+        randomVolumeOffset: {x: 0, y: 0}
+        useReverb: 0
+        preset: 0
+        MixerGroop: {fileID: -1071407340316977573, guid: ffe9d80e515549047a315f339d06c500, type: 2}
+    - ID: DiningTable
+      Name: "\u041E\u0431\u0435\u0434\u0435\u043D\u043D\u044B\u0439 \u0441\u0442\u043E\u043B"
+      Icon: {fileID: 0}
+      voiceType:
+        ID: 
+        clip: {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
+        additionClips:
+        - {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
+        - {fileID: 8300000, guid: c6fc1570437806244a5fb4dc1891cb86, type: 3}
+        - {fileID: 8300000, guid: 15bd1e34be2b7b744af0f5ab91730e77, type: 3}
+        - {fileID: 8300000, guid: 03e10797ab6dc26469cebc410958ddb2, type: 3}
+        - {fileID: 8300000, guid: 5c0c52e2da9a0d14ebb9fdc0fbe68ded, type: 3}
+        volume: 1
+        pitch: 1
+        loop: 0
+        spatialBlend: 1
+        rolloffMode: 0
+        dopplerLevel: 1
+        randomPitchOffset: {x: -0.2, y: 0.1}
+        randomVolumeOffset: {x: 0, y: 0}
+        useReverb: 0
+        preset: 0
+        MixerGroop: {fileID: -1071407340316977573, guid: ffe9d80e515549047a315f339d06c500, type: 2}
+    - ID: TrashWoman
+      Name: "\u041C\u0443\u0441\u043E\u0440(\u0436\u0435\u043D\u0449\u0438\u043D\u0430)"
+      Icon: {fileID: 0}
+      voiceType:
+        ID: 
+        clip: {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
+        additionClips:
+        - {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
+        - {fileID: 8300000, guid: c6fc1570437806244a5fb4dc1891cb86, type: 3}
+        - {fileID: 8300000, guid: 15bd1e34be2b7b744af0f5ab91730e77, type: 3}
+        - {fileID: 8300000, guid: 03e10797ab6dc26469cebc410958ddb2, type: 3}
+        - {fileID: 8300000, guid: 5c0c52e2da9a0d14ebb9fdc0fbe68ded, type: 3}
+        volume: 0.7
+        pitch: 2.5
+        loop: 0
+        spatialBlend: 1
+        rolloffMode: 0
+        dopplerLevel: 1
+        randomPitchOffset: {x: -0.2, y: 0.1}
+        randomVolumeOffset: {x: 0, y: 0}
+        useReverb: 0
+        preset: 0
+        MixerGroop: {fileID: -1071407340316977573, guid: ffe9d80e515549047a315f339d06c500, type: 2}
+    - ID: Bed
+      Name: "\u041A\u0440\u043E\u0432\u0430\u0442\u044C"
+      Icon: {fileID: 0}
+      voiceType:
+        ID: 
+        clip: {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
+        additionClips:
+        - {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
+        - {fileID: 8300000, guid: c6fc1570437806244a5fb4dc1891cb86, type: 3}
+        - {fileID: 8300000, guid: 15bd1e34be2b7b744af0f5ab91730e77, type: 3}
+        - {fileID: 8300000, guid: 03e10797ab6dc26469cebc410958ddb2, type: 3}
+        - {fileID: 8300000, guid: 5c0c52e2da9a0d14ebb9fdc0fbe68ded, type: 3}
+        volume: 1
+        pitch: 1
+        loop: 0
+        spatialBlend: 1
+        rolloffMode: 0
+        dopplerLevel: 1
+        randomPitchOffset: {x: -0.2, y: 0.1}
+        randomVolumeOffset: {x: 0, y: 0}
+        useReverb: 0
+        preset: 0
+        MixerGroop: {fileID: -1071407340316977573, guid: ffe9d80e515549047a315f339d06c500, type: 2}
+    - ID: Balcony
+      Name: "\u0411\u0430\u043B\u043A\u043E\u043D"
+      Icon: {fileID: 0}
+      voiceType:
+        ID: 
+        clip: {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
+        additionClips:
+        - {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
+        - {fileID: 8300000, guid: c6fc1570437806244a5fb4dc1891cb86, type: 3}
+        - {fileID: 8300000, guid: 15bd1e34be2b7b744af0f5ab91730e77, type: 3}
+        - {fileID: 8300000, guid: 03e10797ab6dc26469cebc410958ddb2, type: 3}
+        - {fileID: 8300000, guid: 5c0c52e2da9a0d14ebb9fdc0fbe68ded, type: 3}
+        volume: 1
+        pitch: 1
+        loop: 0
+        spatialBlend: 1
+        rolloffMode: 0
+        dopplerLevel: 1
+        randomPitchOffset: {x: -0.2, y: 0.1}
+        randomVolumeOffset: {x: 0, y: 0}
+        useReverb: 0
+        preset: 0
+        MixerGroop: {fileID: -1071407340316977573, guid: ffe9d80e515549047a315f339d06c500, type: 2}
+    - ID: Lock
+      Name: Lock
+      Icon: {fileID: 0}
+      voiceType:
+        ID: 
+        clip: {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
+        additionClips:
+        - {fileID: 8300000, guid: 6170a0a122fc01d4394289ef7de5e92b, type: 3}
+        - {fileID: 8300000, guid: c6fc1570437806244a5fb4dc1891cb86, type: 3}
+        - {fileID: 8300000, guid: 15bd1e34be2b7b744af0f5ab91730e77, type: 3}
+        - {fileID: 8300000, guid: 03e10797ab6dc26469cebc410958ddb2, type: 3}
+        - {fileID: 8300000, guid: 5c0c52e2da9a0d14ebb9fdc0fbe68ded, type: 3}
+        volume: 1
+        pitch: 1
+        loop: 0
+        spatialBlend: 1
+        rolloffMode: 0
+        dopplerLevel: 1
+        randomPitchOffset: {x: -0.2, y: 0.1}
+        randomVolumeOffset: {x: 0, y: 0}
+        useReverb: 0
+        preset: 0
+        MixerGroop: {fileID: -1071407340316977573, guid: ffe9d80e515549047a315f339d06c500, type: 2}
+    InteractionVis: {fileID: 5800234262247619688, guid: bb2c737eb99c56642a5e8b8d67273ea5, type: 3}

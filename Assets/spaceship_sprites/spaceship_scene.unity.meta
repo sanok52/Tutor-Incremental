@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a4677fe02a9d4504a872e6199ea9d486
+timeCreated: 1484927929
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 81051
+  packageName: Simple spaceships
+  packageVersion: 1.0
+  assetPath: Assets/spaceship_sprites/spaceship_scene.unity
+  uploadId: 157461
