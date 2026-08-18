@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TextSpriteScoreUpLR : TextScoreUpLR
 {
     [Space, Header("Sprite")]
     [SerializeField] private SpriteRenderer spriteRenderer;
+    [SerializeField] private Image image;
 
     public void SetSprite(Sprite sprite)
     {
@@ -33,9 +35,20 @@ public class TextSpriteScoreUpLR : TextScoreUpLR
 
     public void SetSprite (Sprite sprite, Color color, Vector3 coefSize, Vector2 offset)
     {
-        spriteRenderer.sprite = sprite;
-        spriteRenderer.transform.localScale = Vector3.Scale(spriteRenderer.transform.localScale, coefSize);
-        spriteRenderer.transform.localPosition += (Vector3)offset;
-        spriteRenderer.color = color;
+        if(spriteRenderer != null)
+        {
+            spriteRenderer.sprite = sprite;
+            spriteRenderer.transform.localScale = Vector3.Scale(spriteRenderer.transform.localScale, coefSize);
+            spriteRenderer.transform.localPosition += (Vector3)offset;
+            spriteRenderer.color = color;
+        }
+
+        if(image != null)
+        {
+            image.sprite = sprite;
+            image.transform.localScale = Vector3.Scale(image.transform.localScale, coefSize);
+            image.transform.localPosition += (Vector3)offset;
+            image.color = color;
+        }
     }
 }

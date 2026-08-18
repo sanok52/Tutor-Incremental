@@ -10,7 +10,7 @@ using Random = UnityEngine.Random;
 public class ResourceManager
 {
     public Dictionary<string, IValueContainer> resources = new Dictionary<string, IValueContainer>();
-
+    private (string, string) postPrefLast = ("", "");
 
     public IValueContainer this[string title]
     {
@@ -97,17 +97,28 @@ public class ResourceManager
         Vector2 offset = Random.insideUnitCircle * 30f; // разброс в пикселях
         Vector2 finalPos = basePos + offset;
 
+        ValueContainerUISettings uISettings = new ValueContainerUISettings()
+        {
+            Color = data.InterfaceSettings.Color,
+            Prefix = data.InterfaceSettings.Prefix + postPrefLast.Item1,
+            Postfix = data.InterfaceSettings.Postfix + postPrefLast.Item2,
+            SizeKof = data.InterfaceSettings.SizeKof,
+            Title = data.InterfaceSettings.Title
+        };
+        postPrefLast = ("", "");
+
         InterfaceManager.CreateDeltaFlyingText(
             (int)data.DeltaNotClamp,
-            data.InterfaceSettings,
+            uISettings,
             new Vector3(finalPos.x, finalPos.y, 0f),
             null,
             true // isUI
         );
     }
 
-    public void AddResource(string id, int add, Vector3? position, Transform transform)
+    public void AddResource(string id, int add, Vector3? position, Transform transform, string prefix = "", string postfix = "")
     {
+        postPrefLast = (prefix, postfix);
         resources[id].AddValue(add, position, transform, add > 0 ? ValueChangeType.Add : ValueChangeType.Remove);
     }
 }

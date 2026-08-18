@@ -266,7 +266,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8078812029998825119}
-  - component: {fileID: 6748902567126590156}
+  - component: {fileID: 820162324870604236}
   m_Layer: 5
   m_Name: Reaction
   m_TagString: Untagged
@@ -295,7 +295,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 144.0874, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &6748902567126590156
+--- !u!114 &820162324870604236
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -304,8 +304,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 9189335187732872166}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d55513c5e6b0c64d9af2c5732e3b3eb, type: 3}
+  m_Script: {fileID: 11500000, guid: bdf5325d3e03fb2489172f915ec4bcf3, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ReactionPostView
-  spriteRenderer: {fileID: 1945721107745090331}
+  m_EditorClassIdentifier: Assembly-CSharp::ReactionButton
+  button: {fileID: 7221420191297834813}
+  iconImage: {fileID: 1945721107745090331}
   countText: {fileID: 8563287483768651073}
+  cooldownOverlay: {fileID: 0}
+  cooldownTimerText: {fileID: 0}

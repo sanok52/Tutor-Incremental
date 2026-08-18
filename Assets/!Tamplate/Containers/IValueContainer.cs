@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections;
 using UnityEngine;
-using UnityEngine.Experimental.GlobalIllumination;
 
 public interface IValueContainer
 {
@@ -94,13 +93,15 @@ public struct ValueContainerUISettings
     public float SizeKof;
     public string Prefix;
     public string Postfix;
+    public Sprite Icon;
 
-    public ValueContainerUISettings(string title, ColorBetweenScore color, float sizeKof, string prefix, string postfix)
+    public ValueContainerUISettings(string title, ColorBetweenScore color, float sizeKof, string prefix, string postfix, Sprite icon = null)
     {
         Title = title;
         Color = color;
         SizeKof = sizeKof;
         Prefix = prefix;
         Postfix = postfix;
+        Icon = icon;
     }
 }

@@ -9,10 +9,12 @@ public enum InterfaceComand { None, SwitchPause, OpenPause, ClosePause, PlayGame
 
 public static class InterfaceManager
 {
-    private static Canvas mainCanvas;
+    public static Canvas mainCanvas;
     private static BlackScreen blackScreen;
-    private static TextScoreUpLR flyingTextPref;
-    private static TextScoreUpLR flyingTextUIPref;
+    public static TextScoreUpLR flyingTextPref;
+    public static TextScoreUpLR flyingTextUIPref;
+    public static TextSpriteScoreUpLR flyingSpriteTextPref;
+    public static TextSpriteScoreUpLR flyingSpriteTextUIPref;
 
     public static BarUIMediator BarMediator { get; private set; }
     public static Canvas MainCanvas => mainCanvas;
@@ -48,6 +50,8 @@ public static class InterfaceManager
 
         flyingTextPref = Resources.Load<TextScoreUpLR>("InterfacePrefabs/FlyingText");
         flyingTextUIPref = Resources.Load<TextScoreUpLR>("InterfacePrefabs/FlyingTextUI");
+        flyingSpriteTextPref = Resources.Load<TextSpriteScoreUpLR>("InterfacePrefabs/FlyingSpriteText");
+        flyingSpriteTextUIPref = Resources.Load<TextSpriteScoreUpLR>("InterfacePrefabs/FlyingUISpriteText");
 
         BarMediator = new BarUIMediator();
         BarMediator.UpdateLinks();
@@ -176,7 +180,12 @@ public static class InterfaceManager
     {
         Color finalColor = colorBetween.GetColor(scoreChange);
         if (finalColor == default)
-            finalColor = DefaultColor.GetColor(scoreChange); 
+            finalColor = DefaultColor.GetColor(scoreChange);
+
+        if (string.IsNullOrEmpty(prefix))
+            prefix = "";
+        if (string.IsNullOrEmpty(postfix))
+            postfix = "";
 
         if (scoreChange > 0)
         {
@@ -231,6 +240,70 @@ public static class InterfaceManager
         return textScoreUp;
     }
 
+    public static void CreateDeltaSpriteFlyingText(Sprite sprite, string prefix, int scoreChange, string postfix, Vector3 point, Transform parent, ColorBetweenScore colorBetween, bool isUI = false,
+        float? sizeKof = null)
+    {
+        Color finalColor = colorBetween.GetColor(scoreChange);
+        if (finalColor == default)
+            finalColor = DefaultColor.GetColor(scoreChange);
+
+        if (string.IsNullOrEmpty(prefix))
+            prefix = "";
+        if (string.IsNullOrEmpty(postfix))
+            postfix = "";
+
+        if (scoreChange > 0)
+        {
+            prefix += "+";
+        }
+        else
+        if (scoreChange == 0)
+        {
+            prefix += "+";
+        }
+        else
+        if (scoreChange < 0)
+        {
+        }
+
+        TextScoreUpLR textScoreUp = CreateFlyingSpriteText(sprite, prefix + scoreChange.ToString() + postfix, finalColor, point, parent, isUI);
+        if (textScoreUp && sizeKof != null)
+        {
+            textScoreUp.transform.localScale *= (float)sizeKof;
+        }
+    }
+
+    public static TextSpriteScoreUpLR CreateFlyingSpriteText (
+        Sprite sprite, 
+        string text,
+        Color color,
+    Vector3 point,
+    Transform parent,
+    bool isUI = false)
+    {
+        TextSpriteScoreUpLR textScoreUp;
+
+        if (isUI)
+        {
+            textScoreUp = GameObject.Instantiate(flyingSpriteTextUIPref, point, Quaternion.identity, parent);
+            Transform canvas = parent ? parent : mainCanvas.transform;
+
+            textScoreUp.transform.parent = canvas;
+            var rt = textScoreUp.GetComponent<RectTransform>();
+            rt.anchoredPosition = new Vector2(point.x, point.y);
+            point = rt.position;
+        }
+        else
+        {
+            textScoreUp = GameObject.Instantiate(flyingSpriteTextPref, point, Quaternion.identity, parent);
+        }
+        textScoreUp.Init(text, color, point);
+        textScoreUp.SetSprite(sprite);
+
+        GameObject.Destroy(textScoreUp.gameObject, textScoreUp.DurationFly);
+        return textScoreUp;
+    }
+
     public static void ShowBlackScreen(RectTransform rectTrWindow)
     {
         if (MainBlackScreen == null)
@@ -253,6 +326,105 @@ public static class InterfaceManager
     }
 
     private static Dictionary<RectTransform, BlackScreen> blackScrees = new Dictionary<RectTransform, BlackScreen>();
+
+    /// <summary>
+    /// Возвращает локальную позицию (anchoredPosition) RectTransform относительно его родителя.
+    /// </summary>
+    public static Vector2 GetUIPosition(RectTransform target)
+    {
+        return target.anchoredPosition;
+    }
+
+    /// <summary>
+    /// Возвращает позицию (anchoredPosition), которую нужно задать объекту positor,
+    /// чтобы он оказался в той же мировой позиции, что и target.
+    /// Учитывает разные родительские контейнеры.
+    /// </summary>
+    public static Vector2 GetUIPosition(RectTransform target, RectTransform positor)
+    {
+        // Если родители совпадают – просто копируем позицию
+        if (target.parent == positor.parent)
+            return target.anchoredPosition;
+
+        // Получаем мировую позицию target
+        Vector3 worldPos = target.position;
+
+        // Находим Canvas, в котором находится positor
+        Canvas canvas = positor.GetComponentInParent<Canvas>();
+        if (canvas == null)
+        {
+            Debug.LogError("positor не находится внутри Canvas!");
+            return Vector2.zero;
+        }
+
+        Camera cam = canvas.worldCamera;
+        // Для режима ScreenSpaceOverlay камера не используется
+        if (canvas.renderMode == RenderMode.ScreenSpaceOverlay)
+            cam = null;
+
+        // Преобразуем мировую позицию в экранные координаты
+        Vector2 screenPoint = RectTransformUtility.WorldToScreenPoint(cam, worldPos);
+
+        // Преобразуем экранные координаты в локальные координаты родителя positor
+        RectTransform parentRect = positor.parent as RectTransform;
+        if (parentRect == null)
+        {
+            Debug.LogError("Родитель positor не является RectTransform!");
+            return Vector2.zero;
+        }
+
+        RectTransformUtility.ScreenPointToLocalPointInRectangle(
+            parentRect,
+            screenPoint,
+            cam,
+            out Vector2 localPos
+        );
+
+        return localPos;
+    }
+
+    /// <summary>
+    /// Возвращает локальную позицию (anchoredPosition) для объекта targetRect,
+    /// чтобы он оказался в точке экрана screenPoint (например, позиция мыши).
+    /// </summary>
+    public static Vector2 GetUIPositionFromScreenPoint(Vector2 screenPoint, RectTransform targetRect)
+    {
+        Canvas canvas = targetRect.GetComponentInParent<Canvas>();
+        if (canvas == null)
+        {
+            Debug.LogError("targetRect не находится внутри Canvas!");
+            return Vector2.zero;
+        }
+
+        Camera cam = canvas.worldCamera;
+        if (canvas.renderMode == RenderMode.ScreenSpaceOverlay)
+            cam = null;
+
+        RectTransform parentRect = targetRect.parent as RectTransform;
+        if (parentRect == null)
+        {
+            Debug.LogError("Родитель targetRect не является RectTransform!");
+            return Vector2.zero;
+        }
+
+        RectTransformUtility.ScreenPointToLocalPointInRectangle(
+            parentRect,
+            screenPoint,
+            cam,
+            out Vector2 localPos
+        );
+
+        return localPos;
+    }
+
+    /// <summary>
+    /// Упрощённая версия для ScreenSpaceOverlay (без камеры).
+    /// Возвращает экранные координаты как они есть (их можно использовать как anchoredPosition в Overlay).
+    /// </summary>
+    public static Vector2 GetUIPositionFromScreenPoint(Vector2 screenPoint)
+    {
+        return screenPoint;
+    }
 }
 
 [Serializable]

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: EnumData
   m_EditorClassIdentifier: Assembly-CSharp::EnumData
   enums:
-  - name: PostRectionType
+  - name: ReactionType
     values:
     - Like
     - Hot

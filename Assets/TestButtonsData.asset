@@ -19,3 +19,6 @@ MonoBehaviour:
   - id: AddRandomReactoions
     strData: []
     goData: []
+  - id: CompliteMisson
+    strData: []
+    goData: []
